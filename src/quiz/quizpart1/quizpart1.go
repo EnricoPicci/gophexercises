@@ -17,8 +17,7 @@ func check(e error) {
 
 func main() {
 	right := 0
-	// wrong := make(slice int, 0)
-	f, err := os.Open("./src/quizpart1/problems.csv")
+	f, err := os.Open("./src/quiz/quizpart1/problems.csv")
 	check(err)
 	defer f.Close()
 
@@ -41,14 +40,5 @@ func main() {
 		}
 	}
 
-	fmt.Printf("%v right answers out of %v questions", right, questions)
-
-	// scanner := bufio.NewScanner(os.Stdin)
-	// for scanner.Scan() {
-	// 	fmt.Println(scanner.Text())
-	// }
-
-	// if scanner.Err() != nil {
-	// 	fmt.Println("error ", scanner.Err())
-	// }
+	fmt.Printf("%v right answers out of %v questions.", right, questions)
 }
