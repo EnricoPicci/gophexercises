@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "go.gopath": "/Users/administrator/enrico-code/my-code-go/gophexercises/"
+  }
+}
